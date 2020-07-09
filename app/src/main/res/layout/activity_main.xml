@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btn_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image" />
+
+    <Button
+        android:id="@+id/btn_tutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tutorial" />
+
+    <Button
+        android:id="@+id/btn_tutorial2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tutorial2" />
+
+    <Button
+        android:id="@+id/btn_tutorial3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tutorial3" />
+
+    <Button
+        android:id="@+id/btn_puzzle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Puzzle" />
+
+    <Button
+        android:id="@+id/btn_color_detection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ColorDetection" />
+
+    <Button
+        android:id="@+id/btn_cameracalibration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cameracalibration" />
+
+    <Button
+        android:id="@+id/btn_custom_camera_ver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义相机竖屏" />
+
+    <Button
+        android:id="@+id/btn_custom_camera_hon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义相机横屏" />
+
+    <Button
+        android:id="@+id/btn_image_cus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="图片处理" />
+</LinearLayout>

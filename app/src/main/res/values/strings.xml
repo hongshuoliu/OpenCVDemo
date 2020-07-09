@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">OpenCV示例</string>
+
+    <string name="invert">取反</string>
+    <string name="edge">边缘</string>
+    <string name="sobel">梯度</string>
+    <string name="boxBlur">盒子模糊</string>
+    <string name="faceDetection">人脸检测</string>
+    <string name="face_trace">人脸跟踪</string>
+    <string name="eye_area">眼睛候选区域</string>
+    <string name="eye_found">眼睛检测</string>
+    <string name="render_ball">眼睛渲染</string>
+    <string name="eye_ball">黑眼球</string>
+
+    <string name="action_calibrate">Calibrate</string>
+    <string name="calibration">Calibration</string>
+    <string name="undistortion">Undistortion</string>
+    <string name="comparison">Comparison</string>
+    <string name="preview_mode">Preview mode</string>
+    <string name="calibration_successful">Successfully calibrated!\nAvg. re-projection error:</string>
+    <string name="calibration_unsuccessful">Unsuccessful calibration.\nTry again</string>
+    <string name="more_samples">Please, capture more samples</string>
+    <string name="calibrating">Calibrating...</string>
+    <string name="please_wait">Please, wait</string>
+    <string name="original">Original</string>
+    <string name="undistorted">Undistorted</string>
+
+</resources>
