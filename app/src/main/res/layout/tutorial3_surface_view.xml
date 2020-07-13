@@ -2,7 +2,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.liu.opencvdemo.tutorial.Tutorial3View
+    <com.liu.opencvdemo.widget.Tutorial3View
         android:id="@+id/tutorial3_activity_java_surface_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

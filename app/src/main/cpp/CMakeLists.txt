@@ -11,7 +11,6 @@ set(opencv_head_dir ${CMAKE_SOURCE_DIR})
 
 # 2. 添加头文件目录
 include_directories(include)
-include_directories(DetectionBasedTracker_jni.h)
 
 # 3. 添加相关的so库
 add_library(opencv-lib SHARED IMPORTED)
