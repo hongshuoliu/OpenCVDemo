@@ -1,0 +1,50 @@
+# For more information about using CMake with Android Studio, read the
+# documentation: https://d.android.com/studio/projects/add-native-code.html
+
+# Sets the minimum version of CMake required to build the native library.
+
+cmake_minimum_required(VERSION 3.4.1)
+
+set(opencv_lib_dir ${CMAKE_SOURCE_DIR}/../jniLibs/${ANDROID_ABI})
+
+#Add OpenCV 4 lib
+include_directories(include) #Path from gradle to OpenCV Cmake
+include_directories(include/DetectionBasedTracker_jni.h)
+
+
+add_library(opencv-lib
+        SHARED
+        IMPORTED)
+set_target_properties(opencv-lib
+        PROPERTIES IMPORTED_LOCATION
+        ${opencv_lib_dir}/libopencv_java3.so)
+
+#Add Your Native Lib
+add_library(detection_based_tracker
+        SHARED
+        detectionbasedtracker_jni.cpp)
+
+# Searches for a specified prebuilt library and stores the path as a
+# variable. Because CMake includes system libraries in the search path by
+# default, you only need to specify the name of the public NDK library
+# you want to add. CMake verifies that the library exists before
+# completing its build.
+
+find_library( # Sets the name of the path variable.
+        log-lib
+
+        # Specifies the name of the NDK library that
+        # you want CMake to locate.
+        log)
+
+# Specifies libraries CMake should link to your target library. You
+# can link multiple libraries, such as libraries you define in this
+# build script, prebuilt third-party libraries, or system libraries.
+
+target_link_libraries( # Specifies the target library.
+        detection_based_tracker
+        opencv-lib
+        #        ${target} ${ANDROID_OPENCV_COMPONENTS}
+        # Links the target library to the log library
+        # included in the NDK.
+        ${log-lib})

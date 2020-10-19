@@ -29,7 +29,7 @@ import java.util.Date;
 public class ImageUtils {
     private static String TAG = "ImageUtils";
 
-    public static File getSaveFilePath() {
+    public static File createImageFile() {
         String status = Environment.getExternalStorageState();
         if (!status.equals(Environment.MEDIA_MOUNTED)) {
             Log.i(TAG, "SD Card is not suitable...");
@@ -37,7 +37,7 @@ public class ImageUtils {
         }
         SimpleDateFormat df = new SimpleDateFormat("yyyyMMdd_hhmmss");
         String name = df.format(new Date(System.currentTimeMillis())) + ".jpg";
-        File filedir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "myOcrImages");
+        File filedir = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_PICTURES), "myImages");
         filedir.mkdirs();
         String fileName = filedir.getAbsolutePath() + File.separator + name;
         File imageFile = new File(fileName);

@@ -1,3 +1,5 @@
 include ':app'
-rootProject.name='My Application'
+include ':FaceDetect'
 include ':openCVLibrary330'
+
+rootProject.name='My Application'

@@ -175,7 +175,7 @@ public abstract class BaseActivity extends AppCompatActivity {
                 // 适配android 10
                 photoUri = ImageUtils.createImageUri(this);
             } else {
-                photoFile = ImageUtils.getSaveFilePath();
+                photoFile = ImageUtils.createImageFile();
 
                 if (photoFile != null) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
